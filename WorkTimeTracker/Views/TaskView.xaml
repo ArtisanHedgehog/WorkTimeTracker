@@ -11,7 +11,8 @@
         <HorizontalStackLayout>
             <Entry Placeholder="Task name"
                    Text="{Binding Name}"/>
-            <Button Text="Copy"
+            <Button Text=""
+                    FontFamily="Icons"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     Command="{Binding CopyNameToClipboard}"/>
