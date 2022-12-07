@@ -7,15 +7,33 @@
         <local:TaskViewModel/>
     </ContentView.BindingContext>
     
-    <VerticalStackLayout>
-        <HorizontalStackLayout>
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand">
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
             <Entry Placeholder="Task name"
-                   Text="{Binding Name}"/>
+                   Text="{Binding Title}"/>
             <Button Text=""
                     FontFamily="Icons"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    Command="{Binding CopyNameToClipboard}"/>
+                    Command="{Binding CopyTitleToClipboardCommand}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="{Binding ElapsedTime}" />
+            <Button Text=""
+                    FontFamily="Icons"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Command="{Binding StartTimerCommand}"/>
+            <Button Text=""
+                    FontFamily="Icons"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Command="{Binding StopTimerCommand}"/>
+            <Button Text=""
+                    FontFamily="Icons"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Command="{Binding CopyElapsedTimeToClipboardCommand}"/>
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentView>
