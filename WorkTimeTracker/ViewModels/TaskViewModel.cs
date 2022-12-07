@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using System.Timers;
 using System.Windows.Input;
 using WorkTimeTracker.Models;
 
